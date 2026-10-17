@@ -32,19 +32,60 @@
   </header>
 
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-image" src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=2200&q=88" alt="Fresh dumplings arranged in a bamboo steamer" fetchpriority="high">
-      <div class="hero-shade"></div>
-      <div class="hero-content">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> A little taste of home</p>
-        <h1 id="hero-title">Siopao<br><em>made with love.</em></h1>
-        <p class="hero-description">Pillowy steamed buns, filled with rich asado and made for sharing. Your kitchen is about to smell wonderful.</p>
-        <div class="hero-actions">
-          <a class="button button-light" href="#recipe">Make this recipe <span aria-hidden="true">↓</span></a>
-          <span class="hero-note"><span aria-hidden="true">✦</span> A Filipino favorite</span>
-        </div>
+    <section class="hero" aria-label="Siopao recipe highlights" aria-roledescription="carousel">
+      <div class="hero-slides" aria-live="off">
+        <article class="hero-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3: Mongo siopao" aria-hidden="false">
+          <img class="hero-image" src="images/siopao-mongo.webp" alt="Original photo of siopao cut open to show its monggo bean filling" fetchpriority="high">
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> A little taste of home</p>
+            <h1>Siopao<br><em>with a cozy twist.</em></h1>
+            <p class="hero-description">Soft, pillowy buns wrapped around a hearty mongo filling. A comforting favorite, made for sharing.</p>
+            <div class="hero-actions">
+              <a class="button button-light" href="#variations">Meet the fillings <span aria-hidden="true">↓</span></a>
+              <span class="hero-note"><span aria-hidden="true">✦</span> Mongo siopao</span>
+            </div>
+          </div>
+          <div class="hero-caption"><span>01 / 03</span><span>Comfort in every soft, warm bite</span></div>
+        </article>
+        <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 3: Chocolate siopao" aria-hidden="true">
+          <img class="hero-image" src="images/siopao-chocolate.webp" alt="Original photo of a siopao bun cut open around its chocolate filling" fetchpriority="low">
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> A little something sweet</p>
+            <h1>Siopao<br><em>for chocolate lovers.</em></h1>
+            <p class="hero-description">A fluffy steamed bun with a melted chocolate center. Warm, soft, and just sweet enough to make any day better.</p>
+            <div class="hero-actions">
+              <a class="button button-light" href="#variations">Meet the fillings <span aria-hidden="true">↓</span></a>
+              <span class="hero-note"><span aria-hidden="true">✦</span> Chocolate siopao</span>
+            </div>
+          </div>
+          <div class="hero-caption"><span>02 / 03</span><span>A sweet surprise, tucked inside</span></div>
+        </article>
+        <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 3: Asado siopao" aria-hidden="true">
+          <img class="hero-image" src="images/siopao-asado.jpg" alt="Original Siopao Asado collage with an open bun showing asado meat filling" fetchpriority="low">
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> The classic, made at home</p>
+            <h1>Siopao<br><em>made with love.</em></h1>
+            <p class="hero-description">Pillowy steamed buns, filled with rich, savory-sweet asado and made for sharing. Your kitchen is about to smell wonderful.</p>
+            <div class="hero-actions">
+              <a class="button button-light" href="#recipe">Make this recipe <span aria-hidden="true">↓</span></a>
+              <span class="hero-note"><span aria-hidden="true">✦</span> Asado siopao</span>
+            </div>
+          </div>
+          <div class="hero-caption"><span>03 / 03</span><span>Steamed, soft, and ready to share</span></div>
+        </article>
       </div>
-      <div class="hero-caption"><span>01 / 03</span><span>Steamed, soft, and ready to share</span></div>
+      <div class="hero-controls" aria-label="Slide controls">
+        <button class="hero-arrow" type="button" data-slide-direction="-1" aria-label="Previous slide">←</button>
+        <div class="hero-dots" aria-label="Choose a slide">
+          <button type="button" class="hero-dot is-active" data-slide-to="0" aria-label="Show mongo siopao" aria-current="true"></button>
+          <button type="button" class="hero-dot" data-slide-to="1" aria-label="Show chocolate siopao" aria-current="false"></button>
+          <button type="button" class="hero-dot" data-slide-to="2" aria-label="Show asado siopao" aria-current="false"></button>
+        </div>
+        <button class="hero-arrow" type="button" data-slide-direction="1" aria-label="Next slide">→</button>
+      </div>
     </section>
 
     <section class="quick-facts" aria-label="Recipe overview">
