@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3eb">
+  <meta name="description" content="A soft, fluffy Filipino siopao recipe with savory asado filling, plus mongo and chocolate variations.">
+  <title>Siopao, made at home | Pinoy Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Pinoy Table home">
+      <span class="brand-mark" aria-hidden="true">P<span>.</span></span>
+      <span class="brand-copy"><strong>Pinoy Table</strong><small>Recipes worth gathering for</small></span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#top">Home</a>
+      <a href="#recipe">Recipes <span aria-hidden="true">⌄</span></a>
+      <a href="#story">Our table</a>
+      <a href="#variations">More siopao</a>
+    </nav>
+    <a class="header-cta" href="#recipe">Get cooking <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=2200&q=88" alt="Fresh dumplings arranged in a bamboo steamer" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> A little taste of home</p>
+        <h1 id="hero-title">Siopao<br><em>made with love.</em></h1>
+        <p class="hero-description">Pillowy steamed buns, filled with rich asado and made for sharing. Your kitchen is about to smell wonderful.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#recipe">Make this recipe <span aria-hidden="true">↓</span></a>
+          <span class="hero-note"><span aria-hidden="true">✦</span> A Filipino favorite</span>
+        </div>
+      </div>
+      <div class="hero-caption"><span>01 / 03</span><span>Steamed, soft, and ready to share</span></div>
+    </section>
+
+    <section class="quick-facts" aria-label="Recipe overview">
+      <div class="fact"><span class="fact-icon" aria-hidden="true">◷</span><span><small>Prep time</small><strong>1 hr 30 min</strong></span></div>
+      <div class="fact"><span class="fact-icon" aria-hidden="true">♨</span><span><small>Cook time</small><strong>20 min</strong></span></div>
+      <div class="fact fact-servings"><span class="fact-icon" aria-hidden="true">♧</span><span><small>Makes</small><strong><span id="serving-count">12</span> siopao</strong></span>
+        <div class="serving-control" aria-label="Adjust servings">
+          <button type="button" data-serving-change="-1" aria-label="Decrease servings">−</button>
+          <button type="button" data-serving-change="1" aria-label="Increase servings">+</button>
+        </div>
+      </div>
+      <div class="fact"><span class="fact-icon" aria-hidden="true">♡</span><span><small>Difficulty</small><strong>Worth the wait</strong></span></div>
+    </section>
+
+    <section class="recipe-layout page-width" id="recipe" aria-label="Siopao recipe">
+      <aside class="ingredients-panel">
+        <div class="section-heading ingredients-heading">
+          <p class="eyebrow eyebrow-dark">Gather your ingredients</p>
+          <h2>The good stuff<span class="heading-flourish">.</span></h2>
+          <p>Check things off as you go. A little prep makes the whole process a breeze.</p>
+        </div>
+
+        <div class="ingredient-group">
+          <div class="group-heading"><h3>For the dough</h3><span>01</span></div>
+          <ul class="ingredient-list">
+            <li><label><input type="checkbox"><span class="checkmark"></span><span class="ingredient-text"><span class="amount" data-amount="4">4</span> cups all-purpose flour</span></label></li>
+            <li><label><input type="checkbox"><span class="checkmark"></span><span class="ingredient-text"><span class="amount" data-amount="2">2</span> tsp instant yeast</span></label></li>
+            <li><label><input type="checkbox"><span class="checkmark"></span><span class="ingredient-text"><span class="amount" data-amount="0.25">¼</span> cup sugar</span></label></li>
+            <li><label><input type="checkbox"><span class="checkmark"></span><span class="ingredient-text"><span class="amount" data-amount="1">1</span> tsp fine salt</span></label></li>
+            <li><label><input type="checkbox"><span class="checkmark"></span><span class="ingredient-text"><span class="amount" data-amount="1">1</span> cup warm water</span></label></li>
+            <li><label><input type="checkbox"><span class="checkmark"></span><span class="ingredient-text"><span class="amount" data-amount="2">2</span> tbsp neutral oil</span></label></li>
+          </ul>
+        </div>
+
+        <div class="ingredient-group">
+          <div class="group-heading"><h3>For the asado</h3><span>02</span></div>
+          <ul class="ingredient-list">
+            <li><label><input type="checkbox"><span class="checkmark"></span><span class="ingredient-text"><span class="amount" data-amount="1.5">1½</span> lb pork shoulder, diced</span></label></li>
+            <li><label><input type="checkbox"><span class="checkmark"></span><span class="ingredient-text"><span class="amount" data-amount="1">1</span> medium onion, chopped</span></label></li>
+            <li><label><input type="checkbox"><span class="checkmark"></span><span class="ingredient-text"><span class="amount" data-amount="3">3</span> cloves garlic, minced</span></label></li>
+            <li><label><input type="checkbox"><span class="checkmark"></span><span class="ingredient-text"><span class="amount" data-amount="0.25">¼</span> cup soy sauce</span></label></li>
+            <li><label><input type="checkbox"><span class="checkmark"></span><span class="ingredient-text"><span class="amount" data-amount="2">2</span> tbsp oyster sauce</span></label></li>
+            <li><label><input type="checkbox"><span class="checkmark"></span><span class="ingredient-text"><span class="amount" data-amount="1">1</span> tbsp brown sugar</span></label></li>
+            <li><label><input type="checkbox"><span class="checkmark"></span><span class="ingredient-text"><span class="amount" data-amount="1">1</span> tbsp cornstarch</span></label></li>
+          </ul>
+        </div>
+        <p class="ingredient-note"><span aria-hidden="true">✳</span> For the classic red dot, save a little food coloring for the tops.</p>
+      </aside>
+
+      <div class="instructions-panel">
+        <div class="instructions-topline">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-dark">From kitchen to table</p>
+            <h2>Let’s make siopao<span class="heading-flourish">.</span></h2>
+          </div>
+          <span class="step-counter"><strong id="completed-count">0</strong> / 5 done</span>
+        </div>
+        <div class="progress-track" aria-hidden="true"><span id="progress-fill"></span></div>
+
+        <ol class="steps-list">
+          <li class="recipe-step">
+            <button class="step-number" type="button" aria-label="Mark step 1 complete">1</button>
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=480&q=80" alt="Soft steamed dumplings" loading="lazy">
+            <div class="step-copy"><h3>Mix and knead</h3><p>Stir flour, sugar, yeast, and salt in a large bowl. Add warm water and oil, then knead until smooth and springy, about 8 minutes.</p><span class="step-time">8 min hands-on</span></div>
+          </li>
+          <li class="recipe-step">
+            <button class="step-number" type="button" aria-label="Mark step 2 complete">2</button>
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=480&q=80" alt="Savory filling cooking in a pan" loading="lazy">
+            <div class="step-copy"><h3>Cook the asado</h3><p>Brown the pork with onion and garlic. Add soy, oyster sauce, and sugar. Simmer until tender, then stir in cornstarch slurry until glossy. Cool completely.</p><span class="step-time">25 min</span></div>
+          </li>
+          <li class="recipe-step">
+            <button class="step-number" type="button" aria-label="Mark step 3 complete">3</button>
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=480&q=80" alt="A dumpling being shaped by hand" loading="lazy">
+            <div class="step-copy"><h3>Fill and fold</h3><p>Divide dough into 12 pieces and roll each into a round. Add a spoonful of cooled filling, pleat the edges together, and pinch to seal.</p><span class="step-time">20 min hands-on</span></div>
+          </li>
+          <li class="recipe-step">
+            <button class="step-number" type="button" aria-label="Mark step 4 complete">4</button>
+            <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=480&q=80" alt="Buns resting before they are steamed" loading="lazy">
+            <div class="step-copy"><h3>Let them rise</h3><p>Set each bun on a small square of parchment. Cover loosely and leave in a warm spot until puffy, about 30 minutes.</p><span class="step-time">30 min resting</span></div>
+          </li>
+          <li class="recipe-step">
+            <button class="step-number" type="button" aria-label="Mark step 5 complete">5</button>
+            <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=480&q=80" alt="Steamed buns ready to serve" loading="lazy">
+            <div class="step-copy"><h3>Steam and share</h3><p>Steam over simmering water for 15–18 minutes. Turn off the heat and rest for 3 minutes before opening the lid. Best served warm.</p><span class="step-time">18 min</span></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="bottom-notes page-width" id="story">
+      <article class="family-note">
+        <span class="note-icon" aria-hidden="true">✳</span>
+        <div><p class="eyebrow eyebrow-dark">A note from our kitchen</p><h2>Good things take a little time.</h2><p>Keep the steamer covered while the buns cook, and resist peeking. That steady steam is what gives siopao its lovely, cloud-soft top.</p></div>
+        <span class="note-doodle" aria-hidden="true">Made to<br>be shared <span>♡</span></span>
+      </article>
+      <aside class="variation-panel" id="variations">
+        <div class="variation-heading"><div><p class="eyebrow eyebrow-dark">A bun for every mood</p><h2>Try another filling</h2></div><a href="#recipe" aria-label="Explore the recipe">↗</a></div>
+        <div class="variation-list">
+          <a class="variation" href="#recipe"><img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=400&q=80" alt="Asado siopao"><span><strong>Asado</strong><small>Sweet-savory pork</small></span></a>
+          <a class="variation" href="#recipe"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=400&q=80" alt="Mongo bean filling"><span><strong>Mongo</strong><small>Cozy mung bean</small></span></a>
+          <a class="variation" href="#recipe"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=400&q=80" alt="Chocolate filling"><span><strong>Chocolate</strong><small>A sweet little surprise</small></span></a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand-footer" href="#top"><span class="brand-mark" aria-hidden="true">P<span>.</span></span><span class="brand-copy"><strong>Pinoy Table</strong><small>Recipes worth gathering for</small></span></a>
+    <p>From our kitchen, with love. <span>© 2025 Pinoy Table</span></p>
+    <a class="back-top" href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
